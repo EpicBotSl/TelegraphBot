@@ -1,10 +1,10 @@
 from pyrogram import Client, filters
 import os
-from pyrogram.types import*
+from pyrogram.types import *
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from telegraph import upload_file
 
-from config import*
+from config import *
 import requests
 from PIL import Image
 from pyrogram.types import Message
