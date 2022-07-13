@@ -4,4 +4,9 @@ Pillow~=8.3.1
 requests~=2.25.1
 pyromod
 psycopg2
-dotenv
+python-dotenv==0.*
+pyromod==1.5
+pyrogram1==0.*
+TgCrypto==1.*
+pyrogram==2.*
+pyrogram
