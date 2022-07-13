@@ -8,7 +8,7 @@ import requests
 from PIL import Image
 from pyrogram.types import Message
 
-client = Client
+psycho = Client
 
 
 DOWNLOAD_LOCATION = "./DOWNLOADS/"
