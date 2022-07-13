@@ -17,26 +17,27 @@ psycho = Client(
 )
 
 
-DOWNLOAD_LOCATION = "./DOWNLOADS/"
-
-START_TEXT = """
+START_TEXT = f"""
 H![✨](https://telegra.ph/file/1434d9d0eb6a8bf00456a.jpg)
 I am Telegraph Media Converter🧳 Create by Telegraph v3
 I can create Pictures under 5MB
 ~ @Master_X_Updates ~
 """
-HELP_TEXT = """
+
+HELP_TEXT = f"""
 - Just give me a media under 5MB
 - Then I will download it
 - I will then upload it to the telegra.ph link
 Support ~ @Master_X_Updates ~
 """
-ABOUT_TEXT = """
+
+ABOUT_TEXT = f"""
 - **Bot :** `Telegraph Uploader v3`
 - **Python3 :** `3.9.6`
 - **Updates Channel: **[Master X Bot's Updates](t.me/Master_X_Updates)
 - **Support :** [Best Friends](t.me/Best_Friends15)
 """
+
 START_BUTTONS = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('Help', callback_data='help'),
