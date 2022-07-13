@@ -4,11 +4,17 @@ from pyrogram.types import*
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from telegraph import upload_file
 
+from config import*
 import requests
 from PIL import Image
 from pyrogram.types import Message
 
-psycho = Client
+psycho = Client(
+    "Epic Developers",
+    api_id=API_ID,
+    api_hash=API_HASH,
+    bot_token=BOT_TOKEN
+)
 
 
 DOWNLOAD_LOCATION = "./DOWNLOADS/"
@@ -228,3 +234,5 @@ print("""
 #──────────────────║║
 #──────────────────╚╝
 """)
+
+psycho.run()
