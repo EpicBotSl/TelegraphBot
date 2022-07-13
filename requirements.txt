@@ -4,3 +4,4 @@ Pillow~=8.3.1
 requests~=2.25.1
 pyromod
 psycopg2
+dotenv
