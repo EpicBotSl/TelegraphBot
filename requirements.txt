@@ -5,3 +5,7 @@ pyromod
 psycopg2
 python-dotenv
 pyrogram
+telegraph==1.4.1 
+tgcrypto==1.2.0 
+pyrogram==1.2.9
+
