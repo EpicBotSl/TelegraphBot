@@ -1,4 +1,4 @@
-Nofrom pyrogram import Client, filters
+from pyrogram import Client, filters
 import os
 from pyrogram.types import*
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
