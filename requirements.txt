@@ -1,3 +1,9 @@
+python-dotenv==0.*
+psycopg2==2.*
+Telethon==1.*
+pyromod==1.5
+pyrogram1==0.*
+TgCrypto==1.*
+pyrogram==2.*
 pyrogram
-tgcrypto
-random
+requests
