@@ -1,9 +1,6 @@
-python-dotenv==0.*
-psycopg2==2.*
-Telethon==1.*
-pyromod==1.5
-pyrogram1==0.*
-TgCrypto==1.*
-pyrogram==2.*
-pyrogram
-requests
+pyrogram~=1.2.9
+TgCrypto
+Pillow~=8.3.1
+requests~=2.25.1
+pyromod
+psycopg2
