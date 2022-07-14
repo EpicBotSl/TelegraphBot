@@ -49,7 +49,8 @@ def ul(_, message):
         i.edit(f'Your telegraph [link]({url})', reply_markup=Heya, disable_web_page_preview=True)
 
 Heya = InlineKeyboardMarkup([[
-                 InlineKeyboardButton('⏎', url="https://t.me/EpicBotsSl")
+                 InlineKeyboardButton('open', url="url"),
+                 InlineKeyboardButton('⏎', url="https://t.me/EpicBotsSl"),
                  ]])
 
 
