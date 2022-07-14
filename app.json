@@ -42,11 +42,6 @@
       "required": true,
       "value": ""
     },
-    "DOWNLOAD_LOCATION": {
-      "description": "Get this value from @botfather",
-      "required": true,
-      "value": ""
-    },
     "API_HASH": {
       "description": "Get this value from my.telegram.org.",
       "required": true,
