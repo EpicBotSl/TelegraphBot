@@ -1,7 +1,6 @@
 import os
-from dotenv import load_dotenv
-
-load_dotenv()
+from pyrogram import *
+from pyrogram.types import *
 
 API_ID = os.getenv("API_ID", "").strip()
 API_HASH = os.getenv("API_HASH", "").strip()
