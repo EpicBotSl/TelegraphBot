@@ -2,6 +2,7 @@ import os
 from config import *
 from pyrogram import *
 from pyrogram.types import *
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram import Client, filters
 from pyrogram.types import Message
 import logging
@@ -45,18 +46,11 @@ def ul(_, message):
         for x in fk:
             url = "https://telegra.ph" + x
 
-        i.edit(f'Your telegraph [link]({url})', disable_web_page_preview=True)
+        i.edit(f'Your telegraph [link]({url})', reply_markup=Heya, disable_web_page_preview=True)
 
-@app.on_message(filters.command('url'))
-async def ul(_, message):
-    if reply.media:
-        message.reply("**Downloading....**")
-        path = reply.download()
-        fk = upload_file(path)
-        for x in fk:
-            url = "https://telegra.ph" + x"
-
-    await app.send_message(message.chat.id, text=f'{url}')
+Heya = InlineKeyboardMarkup([[
+                 InlineKeyboardButton('⏎', url="https://t.me/EpicBotsSl")
+                 ]])
 
 
 print("hellow world")
