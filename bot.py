@@ -1,5 +1,5 @@
 import os
-from config.import
+from config import *
 from pyrogram import *
 from pyrogram.types import *
 from pyrogram import Client, filters
