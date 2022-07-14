@@ -49,6 +49,13 @@ def ul(_, message):
 
 @app.on_message(filters.command('url'))
 async def ul(_, message):
+    if reply.media:
+        message.reply("**Downloading....**")
+        path = reply.download()
+        fk = upload_file(path)
+        for x in fk:
+            url = "https://telegra.ph" + x"
+
     await app.send_message(message.chat.id, text=f'{url}')
 
 
