@@ -36,7 +36,7 @@ async def take_ss(_, message: Message):
         await message.reply_text(str(e))
 
 @app.on_message(filters.command('ul'))
-def ul(_, message):
+async def ul(_, message):
     reply = message.reply_to_message
     if reply.media:
         i = message.reply("**Downloading....**")
@@ -46,7 +46,7 @@ def ul(_, message):
             url = "https://telegra.ph" + x
 
         i.edit(f'**Complete..**')
-        await app.send_message(f'{url}', disable_web_page_preview=True)
+        await app.send_message(f'{url}')
 
 print("hellow world")
 app.run()
