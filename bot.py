@@ -37,7 +37,7 @@ async def take_ss(_, message: Message):
 
 @app.on_message(filters.command('ul'))
 async def ul(_, message):
-        await message.reply("**Downloading....**")
+        await message.reply(f"**{url}**")
         path = reply.download()
         fk = upload_file(path)
         for x in fk:
