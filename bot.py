@@ -45,7 +45,7 @@ async def ul(_, message):
         for x in fk:
             url = "https://telegra.ph" + x
 
-        i.edit(f'**Complete..**')
+        await message.edit(f'**Complete..**')
         await app.send_message(f'{url}')
 
 print("hellow world")
