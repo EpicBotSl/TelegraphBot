@@ -35,7 +35,7 @@ async def take_ss(_, message: Message):
     except Exception as e:
         await message.reply_text(str(e))
 
-@bot.on_message(filters.command('ul'))
+@app.on_message(filters.command('ul'))
 def ul(_, message):
     reply = message.reply_to_message
     if reply.media:
