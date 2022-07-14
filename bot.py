@@ -5,6 +5,7 @@ from pyrogram.types import *
 from pyrogram import Client, filters
 from pyrogram.types import Message
 import logging
+from telegraph import upload_file
 
 app = Client(
     "Team Epic",
@@ -33,6 +34,18 @@ async def take_ss(_, message: Message):
         await m.delete()
     except Exception as e:
         await message.reply_text(str(e))
+
+@app.on_message(filters.command('ul'))
+def ul(_, message):
+    reply = message.reply_to_message
+    if reply.media:
+        i = message.reply("**Downloading....**")
+        path = reply.download()
+        fk = upload_file(path)
+        for x in fk:
+            url = "https://telegra.ph" + x
+
+        i.edit(f'Your telegraph [link]({url})', disable_web_page_preview=True)
 
 print("hellow world")
 app.run()
