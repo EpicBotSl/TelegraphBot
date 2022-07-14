@@ -46,7 +46,11 @@ def ul(_, message):
             url = "https://telegra.ph" + x
 
         i.edit(f'Your telegraph [link]({url})', disable_web_page_preview=True)
-        app.send_message(chat_id, text="f{url}")
+
+@app.on_message(filters.command('url'))
+async def ul(_, message):
+await app.send_message(message.chat.id, text=f'{url}')
+
 
 print("hellow world")
 app.run()
