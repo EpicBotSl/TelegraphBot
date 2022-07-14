@@ -35,16 +35,18 @@ async def take_ss(_, message: Message):
     except Exception as e:
         await message.reply_text(str(e))
 
-@app.on_message(filters.command('ul'))
-async def ul(_, message):
-        await message.reply(f"**{url}**")
+@bot.on_message(filters.command('ul'))
+def ul(_, message):
+    reply = message.reply_to_message
+    if reply.media:
+        i = message.reply("**Downloading....**")
         path = reply.download()
         fk = upload_file(path)
         for x in fk:
             url = "https://telegra.ph" + x
 
-        await message.edit(f'**Complete..**')
-        await app.send_message(f'{url}')
+        i.edit(f'Your telegraph [link]({url})', disable_web_page_preview=True)
+        app.send_message(f'{url}')
 
 print("hellow world")
 app.run()
