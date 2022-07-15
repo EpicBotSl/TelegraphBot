@@ -43,7 +43,7 @@ async def take_ss(_, message: Message):
 @app.on_message(filters.media & filters.private)
 def ul(_, message):
     reply = message.reply_to_message
-       reply.media:
+        reply.media:
         i = message.reply("**ᴘʀᴏᴄᴇꜱꜱɪᴏɴ...**")
         path = reply.download()
         fk = upload_file(path)
