@@ -130,71 +130,6 @@ async def uploadphoto(client, message):
 🔵🔵🔵
 🔵🔵🔵
 """)
-  await msg.edit_text(f"""
-⚪⚪⚪
-⚪⚪⚪
-⚪⚪⚪
-""")
-  await msg.edit_text(f"""
-⚫⚫⚫
-⚫⚫⚫
-⚫⚫⚫
-""")
-  await msg.edit_text(f"""
-🔴🔴🔴
-🔴🔴🔴
-🔴🔴🔴
-""")
-  await msg.edit_text(f"""
-🔵🔵🔵
-🔵🔵🔵
-🔵🔵🔵
-""")
-  await msg.edit_text(f"""
-⚪⚪⚪
-⚪⚪⚪
-⚪⚪⚪
-""")
-  await msg.edit_text(f"""
-⚫⚫⚫
-⚫⚫⚫
-⚫⚫⚫
-""")
-  await msg.edit_text(f"""
-🔴🔴🔴
-🔴🔴🔴
-🔴🔴🔴
-""")
-  await msg.edit_text(f"""
-🔵🔵🔵
-🔵🔵🔵
-🔵🔵🔵
-""")
-  await msg.edit_text(f"""
-⚪⚪⚪
-⚪⚪⚪
-⚪⚪⚪
-""")
-  await msg.edit_text(f"""
-⚫⚫⚫
-⚫⚫⚫
-⚫⚫⚫
-""")
-  await msg.edit_text(f"""
-🔴🔴🔴
-🔴🔴🔴
-🔴🔴🔴
-""")
-  await msg.edit_text(f"""
-🔵🔵🔵
-🔵🔵🔵
-🔵🔵🔵
-""")
-  await msg.edit_text(f"""
-⚪⚪⚪
-⚪⚪⚪
-⚪⚪⚪
-""")
   await msg.edit_text("⚫🔴🔵⚪")
   await msg.edit_text("⚫⚪🔵🔴")
   await msg.edit_text("⚫🔵🔴⚪")
@@ -213,12 +148,6 @@ async def uploadphoto(client, message):
   await msg.edit_text("⚫🔴⚪🔵")
   await msg.edit_text("⚫🔴🔵⚪")
   await msg.edit_text("⚫⚪🔵🔴")
-  await msg.edit_text("⚫🔵🔴⚪")
-  await msg.edit_text("⚫🔴⚪🔵")
-  await msg.edit_text("⚫🔴🔵⚪")
-  await msg.edit_text("⚫⚪🔵🔴")
-  await msg.edit_text("⚫🔵🔴⚪")
-  await msg.edit_text("⚫🔴⚪🔵")
   await msg.edit_text("🆂 ▍🔴 ▍")
   await msg.edit_text("🅴 ▍🔴⚫ ▍")
   await msg.edit_text("🅽 ▍🔴⚫⚪ ▍")
