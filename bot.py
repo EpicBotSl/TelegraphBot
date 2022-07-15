@@ -7,6 +7,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 import logging
 from telegraph import upload_file
+from urllib.parse import quote
 
 app = Client(
     "Team Epic",
