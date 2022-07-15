@@ -40,7 +40,7 @@ async def take_ss(_, message: Message):
 
 #---------------------------Gen Logo Epic-------------------------------------#
 
-@app.on_message(filters.command("tg") & filters.media)
+@app.on_message(filters.command("tg"))
 def ul(_, message):
     reply = message.reply_to_message
     if reply.media:
