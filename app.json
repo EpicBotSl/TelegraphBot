@@ -1,6 +1,6 @@
 {
-  "name": "Epic Session Gen Bot",
-  "description": "Telethon & pyrogram session gen bot",
+  "name": "Epic Telegraph Bot",
+  "description": "Pyrogram Telegraph Bot",
   "logo": "https://te.legra.ph/file/97e45c843108aa0798a7d.jpg",
   "keywords": [
     "telegram",
@@ -39,6 +39,31 @@
     },
     "BOT_TOKEN": {
       "description": "Get this value from @botfather",
+      "required": true,
+      "value": ""
+    },
+    "BOT_USERNAME": {
+      "description": "Your Bot UsetName",
+      "required": true,
+      "value": ""
+    },
+    "AUTH_USERS": {
+      "description": "Bots Admins",
+      "required": true,
+      "value": ""
+    },
+    "AUTH_CHANNEL": {
+      "description": "Force Subscribe Chanel",
+      "required": true,
+      "value": ""
+    },
+    "MONGO_URI": {
+      "description": "Get this value from https://mongodb.com",
+      "required": true,
+      "value": ""
+    },
+    "LOG_CHANEL": {
+      "description": "Your Private Log Chanel Id",
       "required": true,
       "value": ""
     },
