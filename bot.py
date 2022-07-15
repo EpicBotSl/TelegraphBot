@@ -39,7 +39,7 @@ async def take_ss(_, message: Message):
         await message.reply_text(str(e))
 
 @app.on_message(filters.command('ul'))
-async def ul(_, message):
+def ul(_, message):
     reply = message.reply_to_message
     if reply.media:
         i = message.reply("**ᴘʀᴏᴄᴇꜱꜱɪᴏɴ...**")
@@ -49,7 +49,7 @@ async def ul(_, message):
             url = "https://telegra.ph" + x
         i.edit("**ᴄᴏᴠᴇʀᴛɪᴏɴ..**")
         i.edit("**🙂එතකම් සිම්දුවක් අහමුත**")
-        await asyncio.sleep(0.5)
+        asyncio.sleep(0.5)
         i.edit("**වැඩ**")
         i.edit("**කරන**")
         i.edit("**අපේ**")
