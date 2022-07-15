@@ -48,7 +48,7 @@ def ul(_, message):
 
         i.edit(f'ʏᴏᴜʀ ᴏᴅᴇʀ ⇰ `{url}`', reply_markup=InlineKeyboardMarkup([[
                  InlineKeyboardButton('⎙ ᴏᴘᴇɴ', switch_inline_query=url),
-                 InlineKeyboardButton('⎆ ꜱʜᴀʀᴇ', url='t.me/share/url?url=url'),
+                 InlineKeyboardButton('⎆ ꜱʜᴀʀᴇ', url='t.me/share/url?url={url}'),
                  ]]), disable_web_page_preview=True)
 
 
