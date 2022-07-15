@@ -46,7 +46,7 @@ def ul(_, message):
         fk = upload_file(path)
         for x in fk:
             url = "https://telegra.ph" + x
-            xy = 't.me/share/url?url=' + quote(url.format(username=username))
+            xy = 't.me/share/url?url=' + quote(url)
         i.edit(f'ʏᴏᴜʀ ᴏᴅᴇʀ ⇰ `{url}`', reply_markup=InlineKeyboardMarkup([[
                  InlineKeyboardButton('⎙ ᴏᴘᴇɴ', switch_inline_query=url),
                  InlineKeyboardButton('⎆ ꜱʜᴀʀᴇ', url=xy),
