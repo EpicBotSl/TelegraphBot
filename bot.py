@@ -30,17 +30,18 @@ app = Client(
 
 @app.on_message(filters.photo)
 async def uploadphoto(client, message):
-  msg = await message.reply_text("`Tʀʏɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅ join` @septemberfilms")
+  msg = await message.reply_text("`Tʀʏɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅ...")
   userid = str(message.chat.id)
   img_path = (f"./Download....!/{userid}.jpg")
   img_path = await client.download_media(message=message, file_name=img_path)
-  await msg.edit_text("`Uploading..... join` @septemberfilms")
+  await msg.edit_text("Uploading..... ")
   try:
     tlink = upload_file(img_path)
+    epic = "https://telegra.ph" + tlink
   except:
     await msg.edit_text("`Something went wrong join` @septemberfilms") 
   else:
-    await msg.edit_text(f"https://telegra.ph{tlink[0]}")  
+    await msg.edit_text(f"{epic}")  
     reply_markup=InlineKeyboardMarkup( [[
                  InlineKeyboardButton("OPEN LINK", url=f"https://telegra.ph{tlink[0]}"),
                  InlineKeyboardButton("DEV", url=f"t.me/devourdevils"),
