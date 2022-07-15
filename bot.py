@@ -40,14 +40,10 @@ async def uploadphoto(client, message):
   except:
     await msg.edit_text("`Something went wrong join` @septemberfilms") 
   else:
-    await msg.edit_text(f"https://telegra.ph{tlink[0]}")  
-    reply_markup=InlineKeyboardMarkup( [[
-                 InlineKeyboardButton("OPEN LINK", url=f"https://telegra.ph{tlink[0]}"),
-                 InlineKeyboardButton("DEV", url=f"t.me/devourdevils"),
-                 ],[
-                 InlineKeyboardButton("GROUP", url=f"t.me/septemberfilms")
-                 ]]
-                )
+    await msg.edit_text(f"https://telegra.ph{tlink[0]}", reply_markup=InlineKeyboardMarkup([[
+                   InlineKeyboardButton('🎊 ᴏᴘᴇɴ', url="https://telegra.ph{tlink[0]}"),
+                   InlineKeyboardButton('📤 ꜱʜᴀʀᴇ', url="t.me/share/url?url=https://telegra.ph{tlink[0]}"),
+                   ]]), disable_web_page_preview=True))  
     os.remove(img_path) 
     
             
