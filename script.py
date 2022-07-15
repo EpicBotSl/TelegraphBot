@@ -7,11 +7,14 @@ from pyrogram.errors import *
 from pyrogram.types import *
 
 START_BUTTON = InlineKeyboardMarkup([[
-                 InlineKeyboardButton('🍁ꜱᴛᴀʀᴛ ɢᴇɴᴇʀᴀᴛᴇ ꜱᴇꜱꜱɪᴏᴏɴɴ🍁', callback_data="gen")
+                 InlineKeyboardButton('❀ʜᴇʟᴘ❀', callback_data="gen")
                  ],
                  [
-                 InlineKeyboardButton('☔ ʜᴇʟᴘ ☔', callback_data="Help"),
-                 InlineKeyboardButton(text="🎋 ᴀʙᴏᴜᴛ 🎋", callback_data="about")
+                 InlineKeyboardButton('❂ꜱᴜᴘᴘᴏʀᴛᴇᴅ ᴛʏᴘᴇꜱ❂', callback_data="Help"),
+                 InlineKeyboardButton(text="✽ ᴀʙᴏᴜᴛ ✽", callback_data="about")
+                 ],
+                 [
+                 InlineKeyboardButton(text="❦ ꜱʜᴀʀᴇ & ꜱᴜᴘᴘᴏʀᴛ ᴜꜱ ❦", callback_data="about")
                  ],
                  [
                  InlineKeyboardButton(text="</ᴇᴘɪᴄ ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ</>🇱🇰", url="https://t.me/EpicBotsSl")
