@@ -46,7 +46,7 @@ async def ul(_, message):
     i = message.reply("**ᴘʀᴏᴄᴇꜱꜱɪᴏɴ...**")
     path = reply.download()
     fk = upload_file(path)
-    for x in fk:
+     for x in fk:
     url = "https://telegra.ph" + x
     await i.edit("**ᴄᴏᴠᴇʀᴛɪᴏɴ..**")
     await i.edit("**🙂එතකම් සිම්දුවක් අහමුත**")
