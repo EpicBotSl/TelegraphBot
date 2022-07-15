@@ -37,12 +37,13 @@ async def uploadphoto(client, message):
   await msg.edit_text("Uploading..... ")
   try:
     tlink = upload_file(img_path)
+    link = https://telegra.ph{tlink[0]}
   except:
     await msg.edit_text("`Something went wrong join` @septemberfilms") 
   else:
     await msg.edit_text(f"https://telegra.ph{tlink[0]}", reply_markup=InlineKeyboardMarkup([[
-                   InlineKeyboardButton('🎊 ᴏᴘᴇɴ', url="https://telegra.ph{tlink[0]}"),
-                   InlineKeyboardButton('📤 ꜱʜᴀʀᴇ', url="t.me/share/url?url=https://telegra.ph{tlink[0]}"),
+                   InlineKeyboardButton('🎊 ᴏᴘᴇɴ', url="link"),
+                   InlineKeyboardButton('📤 ꜱʜᴀʀᴇ', url="link"),
                    ]]), disable_web_page_preview=True) 
     os.remove(img_path) 
     
