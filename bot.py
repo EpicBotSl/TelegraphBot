@@ -41,31 +41,32 @@ async def take_ss(_, message: Message):
 #---------------------------Gen Logo Epic-------------------------------------#
 
 @app.on_message(filters.command("tg"))
-async def ul(_, message):
+def ul(_, message):
     reply = message.reply_to_message
-    i = message.reply("**ᴘʀᴏᴄᴇꜱꜱɪᴏɴ...**")
-    path = reply.download()
-    fk = upload_file(path)
-     for x in fk:
-    url = "https://telegra.ph" + x
-    await i.edit("**ᴄᴏᴠᴇʀᴛɪᴏɴ..**")
-    await i.edit("**🙂එතකම් සිම්දුවක් අහමුත**")
-    await i.edit("**වැඩ**")
-    await i.edit("**කරන**")
-    await i.edit("**අපේ**")
-    await i.edit("**විරුවා**")
-    await i.edit("**ටාගෝබය😂😂**") 
-    await i.edit("**😪හරි හරි ඉ‍‍ඳාම් ලිම්ක් එක දෙම්නම්**") 
-    await i.edit("**⛀⛀⛀⛀⛀⛀⛀**")
-    await i.edit("**⛁⛀⛀⛀⛀⛀⛀**")
-    await i.edit("**⛁⛁⛀⛀⛀⛀⛀**")
-    await i.edit("**⛁⛁⛁⛀⛀⛀⛀**")
-    await i.edit("**⛁⛁⛁⛁⛀⛀⛀**")
-    await i.edit("**⛁⛁⛁⛁⛁⛀⛀**")
-    await i.edit("**⛁⛁⛁⛁⛁⛁⛀**")
-    await i.edit("**⛁⛁⛁⛁⛁⛁⛁**")
-    xy = 't.me/share/url?url=' + quote(url)
-    await i.edit(f'ʏᴏᴜʀ ᴏᴅᴇʀ🖨️ ⇰ `{url}`', reply_markup=InlineKeyboardMarkup([[
+    if reply.media:
+        i = message.reply("**Downloading....**")
+        path = reply.download()
+        fk = upload_file(path)
+        for x in fk:
+            url = "https://telegra.ph" + x
+        i.edit("**ᴄᴏᴠᴇʀᴛɪᴏɴ..**")
+        i.edit("**🙂එතකම් සිම්දුවක් අහමුත**")
+        i.edit("**වැඩ**")
+        i.edit("**කරන**")
+        i.edit("**අපේ**")
+        i.edit("**විරුවා**")
+        i.edit("**ටාගෝබය😂😂**") 
+        i.edit("**😪හරි හරි ඉ‍‍ඳාම් ලිම්ක් එක දෙම්නම්**") 
+        i.edit("**⛀⛀⛀⛀⛀⛀⛀**")
+        i.edit("**⛁⛀⛀⛀⛀⛀⛀**")
+        i.edit("**⛁⛁⛀⛀⛀⛀⛀**")
+        i.edit("**⛁⛁⛁⛀⛀⛀⛀**")
+        i.edit("**⛁⛁⛁⛁⛀⛀⛀**")
+        i.edit("**⛁⛁⛁⛁⛁⛀⛀**")
+        i.edit("**⛁⛁⛁⛁⛁⛁⛀**")
+        i.edit("**⛁⛁⛁⛁⛁⛁⛁**")
+            xy = 't.me/share/url?url=' + quote(url)
+        i.edit(f'ʏᴏᴜʀ ᴏᴅᴇʀ🖨️ ⇰ `{url}`', reply_markup=InlineKeyboardMarkup([[
                    InlineKeyboardButton('🎊 ᴏᴘᴇɴ', url=url),
                    InlineKeyboardButton('📤 ꜱʜᴀʀᴇ', url=xy),
                    ]]), disable_web_page_preview=True)
