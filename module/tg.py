@@ -19,15 +19,6 @@ from pyrogram.types import (
     CallbackQuery, InlineQuery, Message)
 import random
 
-app = Client(
-    "Team Epic",
-    api_id=API_ID,
-    api_hash=API_HASH,
-    bot_token=BOT_TOKEN
-)
-
-
-
 @app.on_message(filters.photo)
 async def uploadphoto(client, message):
   msg = await message.reply_text("Tʀʏɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅ...")
@@ -186,44 +177,16 @@ async def uploadphoto(client, message):
   await msg.edit_text("🆂🅴🅽🅳🅸")
   await msg.edit_text("🆂🅴🅽🅳🅸🅽")
   await msg.edit_text("🆂🅴🅽🅳🅸🅽🅶")
-  await msg.edit_text("🆂🅴🅽🅳🅸🅽")
-  await msg.edit_text("🆂🅴🅽🅳🅸")
-  await msg.edit_text("🆂🅴🅽🅳")
-  await msg.edit_text("🆂🅴🅽")
-  await msg.edit_text("🆂🅴")
-  await msg.edit_text("🆂")
-  await msg.edit_text("🆂🅴")
-  await msg.edit_text("🆂🅴🅽")
-  await msg.edit_text("🆂🅴🅽🅳")
-  await msg.edit_text("🆂🅴🅽🅳🅸")
-  await msg.edit_text("🆂🅴🅽🅳🅸🅽")
-  await msg.edit_text("🆂🅴🅽🅳🅸🅽🅶")
-  await msg.edit_text("🆂🅴🅽🅳🅸🅽")
-  await msg.edit_text("🆂🅴🅽🅳🅸")
-  await msg.edit_text("🆂🅴🅽🅳")
-  await msg.edit_text("🆂🅴🅽")
-  await msg.edit_text("🆂🅴")
-  await msg.edit_text("🆂")
-  await msg.edit_text("🆂🅴")
-  await msg.edit_text("🆂🅴🅽")
-  await msg.edit_text("🆂🅴🅽🅳")
-  await msg.edit_text("🆂🅴🅽🅳🅸")
-  await msg.edit_text("🆂🅴🅽🅳🅸🅽")
-  await msg.edit_text("🆂🅴🅽🅳🅸🅽🅶")
-  await msg.edit_text("🆂🅴🅽🅳🅸🅽")
-  await msg.edit_text("🆂🅴🅽🅳🅸")
-  await msg.edit_text("🆂🅴🅽🅳")
-  await msg.edit_text("🆂🅴🅽")
-  await msg.edit_text("🆂🅴")
-  await msg.edit_text("🆂")
-  await msg.edit_text("🆗")
+  await msg.edit_text("yeehaa!")
 
   try:
     tlink = upload_file(img_path)
   except:
     await msg.edit_text("`Something went wrong join` @septemberfilms") 
   else:
-    await msg.edit_text(f"ʏᴏᴜʀ ᴏᴅᴇʀ 📥 `https://telegra.ph{tlink[0]}`") 
+    await msg.edit_text(f"""ʏᴏᴜʀ ᴏᴅᴇʀ ➥ 
+📥 `https://telegra.ph{tlink[0]}`
+""") 
     os.remove(img_path) 
     
             
@@ -338,5 +301,3 @@ print("""
 ──╚╝╚══╩╝╚╩╩╩╝╚═══╣╔═╩╩══╝
 ──────────────────║║
 ──────────────────╚╝""")
-
-app.run()
