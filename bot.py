@@ -41,15 +41,31 @@ async def take_ss(_, message: Message):
 def ul(_, message):
     reply = message.reply_to_message
     if reply.media:
-        i = message.reply("**Downloading....**")
+        i = message.reply("**ᴘʀᴏᴄᴇꜱꜱɪᴏɴ...**")
         path = reply.download()
         fk = upload_file(path)
         for x in fk:
             url = "https://telegra.ph" + x
-            xy = 't.me/share/url?url=' + quote(url)
-        i.edit(f'ʏᴏᴜʀ ᴏᴅᴇʀ ⇰ `{url}`', reply_markup=InlineKeyboardMarkup([[
-                 InlineKeyboardButton('⎙ ᴏᴘᴇɴ', switch_inline_query=url),
-                 InlineKeyboardButton('⎆ ꜱʜᴀʀᴇ', url=xy),
+        i.edit("**ᴄᴏᴠᴇʀᴛɪᴏɴ..**")
+        i.edit("**🤔එතකම් සිම්දුවක් අහමුත**")
+        i.edit("**වැඩ**")
+        i.edit("**කරන**")
+        i.edit("**අපේ**")
+        i.edit("**විරුවා**")
+        i.edit("**ටාගෝබය😂😂**")
+        i.edit("**😪හරි හරි ඉ‍‍ඳාම් ලිම්ක් එක දෙම්නම්**") 
+        i.edit("**⛀⛀⛀⛀⛀⛀⛀**")
+        i.edit("**⛁⛀⛀⛀⛀⛀⛀**")
+        i.edit("**⛁⛁⛀⛀⛀⛀⛀**")
+        i.edit("**⛁⛁⛁⛀⛀⛀⛀**")
+        i.edit("**⛁⛁⛁⛁⛀⛀⛀**")
+        i.edit("**⛁⛁⛁⛁⛁⛀⛀**")
+        i.edit("**⛁⛁⛁⛁⛁⛁⛀**")
+        i.edit("**⛁⛁⛁⛁⛁⛁⛁**")
+           xy = 't.me/share/url?url=' + quote(url)
+        i.edit(f'ʏᴏᴜʀ ᴏᴅᴇʀ🖨️ ⇰ `{url}`', reply_markup=InlineKeyboardMarkup([[
+                 InlineKeyboardButton('🎊 ᴏᴘᴇɴ', url=url),
+                 InlineKeyboardButton('📤 ꜱʜᴀʀᴇ', url=xy),
                  ]]), disable_web_page_preview=True)
 
 
