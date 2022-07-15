@@ -110,15 +110,15 @@ async def uploadgif(client, message):
   await msg.edit_text("🆂🅴🅽🅳🅸🅽🅶")
   await msg.edit_text("**yeehaa!**")
 
-    try:
-      tlink = upload_file(gif_path)
-      await msg.edit_text(f"""📥 ʏᴏᴜʀ ᴏᴅᴇʀ 📥
+  try:
+    tlink = upload_file(gif_path)
+    await msg.edit_text(f"""📥 ʏᴏᴜʀ ᴏᴅᴇʀ 📥
  
 ➥  `https://telegra.ph{tlink[0]}`
 """)   
-      os.remove(gif_path)   
-    except:
-      await msg.edit_text("Something really Happend Wrong... join **@EpicChats**") 
+    os.remove(gif_path)   
+  except:
+    await msg.edit_text("Something really Happend Wrong... join **@EpicChats**") 
   else:
     await message.reply_text("Size Should Be Less Than 5 mb join **@EpicChats**")
 
