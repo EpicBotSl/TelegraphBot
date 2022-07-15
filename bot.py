@@ -37,7 +37,7 @@ async def uploadphoto(client, message):
   await msg.edit_text("Uploading..... ")
   try:
     tlink = upload_file(img_path)
-    link = https://telegra.ph{tlink[0]}
+    link = "https://telegra.ph" + {tlink[0]}
   except:
     await msg.edit_text("`Something went wrong join` @septemberfilms") 
   else:
