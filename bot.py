@@ -35,16 +35,44 @@ async def uploadphoto(client, message):
   img_path = (f"./Download....!/{userid}.jpg")
   img_path = await client.download_media(message=message, file_name=img_path)
   await msg.edit_text("Uploading..... ")
+  await msg.edit_text(f"""
+⚫⚫⚫
+⚫⚫⚫
+⚫⚫⚫
+""")
+  await msg.edit_text(f"""
+🔴🔴🔴
+🔴🔴🔴
+🔴🔴🔴
+""")
+  await msg.edit_text(f"""
+🔵🔵🔵
+🔵🔵🔵
+🔵🔵🔵
+""")
+  await msg.edit_text(f"""
+⚪⚪⚪
+⚪⚪⚪
+⚪⚪⚪
+""")
+  await msg.edit_text("⚫🔴🔵⚪")
+  await msg.edit_text("⚫⚪🔵🔴")
+  await msg.edit_text("⚫🔵🔴⚪")
+  await msg.edit_text("⚫🔴⚪🔵")
+  await msg.edit_text("🆂 ▍🔴 ▍")
+  await msg.edit_text("🅴 ▍🔴⚫ ▍")
+  await msg.edit_text("🅽 ▍🔴⚫⚪ ▍")
+  await msg.edit_text("🅳 ▍🔴⚫⚪🔵▍")
+  await msg.edit_text("🅸 ▍🔴⚫⚪🔵🔘▍")
+  await msg.edit_text("🅽 ▍🔴⚫⚪🔵🔘♥▍")
+  await msg.edit_text("🅶 ▍🔴⚫⚪🔵🔘♥♥▍")
+
   try:
     tlink = upload_file(img_path)
-    link = "https://telegra.ph" + {tlink[0]}
   except:
     await msg.edit_text("`Something went wrong join` @septemberfilms") 
   else:
-    await msg.edit_text(f"https://telegra.ph{tlink[0]}", reply_markup=InlineKeyboardMarkup([[
-                   InlineKeyboardButton('🎊 ᴏᴘᴇɴ', url="link"),
-                   InlineKeyboardButton('📤 ꜱʜᴀʀᴇ', url="link"),
-                   ]]), disable_web_page_preview=True) 
+    await msg.edit_text(f"ʏᴏᴜʀ ᴏᴅᴇʀ 📥 `https://telegra.ph{tlink[0]}`") 
     os.remove(img_path) 
     
             
