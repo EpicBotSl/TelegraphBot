@@ -41,7 +41,7 @@ async def uploadphoto(client, message):
   except:
     await msg.edit_text("`Something went wrong join` @septemberfilms") 
   else:
-    await msg.edit_text("{epic}")  
+    await msg.edit_text(f"your {epic}")  
     reply_markup=InlineKeyboardMarkup( [[
                  InlineKeyboardButton("OPEN LINK", url=f"https://telegra.ph{tlink[0]}"),
                  InlineKeyboardButton("DEV", url=f"t.me/devourdevils"),
