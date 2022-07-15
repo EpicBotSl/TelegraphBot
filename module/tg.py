@@ -19,6 +19,8 @@ from pyrogram.types import (
     CallbackQuery, InlineQuery, Message)
 import random
 
+from bot import app 
+
 @app.on_message(filters.photo)
 async def uploadphoto(client, message):
   msg = await message.reply_text("Tʀʏɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅ...")
