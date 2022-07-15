@@ -24,14 +24,98 @@ app = Client
 @app.on_message(filters.animation)
 async def uploadgif(client, message):
   if(message.animation.file_size < 5242880):
-    msg = await message.reply_text("`Tʀʏɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅ join **@EpicChats**")
+    msg = await message.reply_text("**Tʀʏɪɴɢ Tᴏ Uᴘʟᴏᴀᴅ.....**")
     userid = str(message.chat.id)
     gif_path = (f"./DOWNLOADS/{userid}.mp4")
     gif_path = await client.download_media(message=message, file_name=gif_path)
-    await msg.edit_text("`Tʀʏɪɴɢ Tᴏ Uᴘʟᴏᴀᴅ.....`")
+    await msg.edit_text(f"""
+⚫⚫⚫
+⚫⚫⚫
+⚫⚫⚫
+""")
+  await msg.edit_text(f"""
+🔴🔴🔴
+🔴🔴🔴
+🔴🔴🔴
+""")
+  await msg.edit_text(f"""
+🔵🔵🔵
+🔵🔵🔵
+🔵🔵🔵
+""")
+  await msg.edit_text(f"""
+⚪⚪⚪
+⚪⚪⚪
+⚪⚪⚪
+""")
+  await msg.edit_text(f"""
+⚫⚫⚫
+⚫⚫⚫
+⚫⚫⚫
+""")
+  await msg.edit_text(f"""
+🔴🔴🔴
+🔴🔴🔴
+🔴🔴🔴
+""")
+  await msg.edit_text(f"""
+🔵🔵🔵
+🔵🔵🔵
+🔵🔵🔵
+""")
+  await msg.edit_text(f"""
+⚪⚪⚪
+⚪⚪⚪
+⚪⚪⚪
+""")
+  await msg.edit_text(f"""
+⚫⚫⚫
+⚫⚫⚫
+⚫⚫⚫
+""")
+  await msg.edit_text(f"""
+🔴🔴🔴
+🔴🔴🔴
+🔴🔴🔴
+""")
+  await msg.edit_text("⚫🔴🔵⚪")
+  await msg.edit_text("⚫⚪🔵🔴")
+  await msg.edit_text("⚫🔵🔴⚪")
+  await msg.edit_text("⚫⚪🔵🔴")
+  await msg.edit_text("🆂 ▍🔴⚫")
+  await msg.edit_text("🅴 ▍⚫🔴")
+  await msg.edit_text("🅽 ▍🔴⚫")
+  await msg.edit_text("🅳 ▍⚫🔴")
+  await msg.edit_text("🅸 ▍🔴⚫")
+  await msg.edit_text("🅽 ▍⚫🔴")
+  await msg.edit_text("🅶 ▍🔴⚫")
+  await msg.edit_text("🆂")
+  await msg.edit_text("🆂🅴")
+  await msg.edit_text("🆂🅴🅽")
+  await msg.edit_text("🆂🅴🅽🅳")
+  await msg.edit_text("🆂🅴🅽🅳🅸")
+  await msg.edit_text("🆂🅴🅽🅳🅸🅽")
+  await msg.edit_text("🆂🅴🅽🅳🅸🅽🅶")
+  await msg.edit_text("🆂🅴🅽🅳🅸🅽")
+  await msg.edit_text("🆂🅴🅽🅳🅸")
+  await msg.edit_text("🆂🅴🅽🅳")
+  await msg.edit_text("🆂🅴🅽")
+  await msg.edit_text("🆂🅴")
+  await msg.edit_text("🆂")
+  await msg.edit_text("🆂🅴")
+  await msg.edit_text("🆂🅴🅽")
+  await msg.edit_text("🆂🅴🅽🅳")
+  await msg.edit_text("🆂🅴🅽🅳🅸")
+  await msg.edit_text("🆂🅴🅽🅳🅸🅽")
+  await msg.edit_text("🆂🅴🅽🅳🅸🅽🅶")
+  await msg.edit_text("**yeehaa!**")
+
     try:
       tlink = upload_file(gif_path)
-      await msg.edit_text(f"`https://telegra.ph{tlink[0]}`")   
+      await msg.edit_text(f"""📥 ʏᴏᴜʀ ᴏᴅᴇʀ 📥
+ 
+➥  `https://telegra.ph{tlink[0]}`
+""")   
       os.remove(gif_path)   
     except:
       await msg.edit_text("Something really Happend Wrong... join **@EpicChats**") 
