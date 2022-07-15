@@ -19,9 +19,16 @@ from pyrogram.types import (
     CallbackQuery, InlineQuery, Message)
 import random
 
+app = Client(
+    "Team Epic",
+    api_id=API_ID,
+    api_hash=API_HASH,
+    bot_token=BOT_TOKEN
+)
 
 
-@Client.on_message(filters.photo)
+
+@app.on_message(filters.photo)
 async def uploadphoto(client, message):
   msg = await message.reply_text("`Tʀʏɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅ join` @septemberfilms")
   userid = str(message.chat.id)
@@ -45,7 +52,7 @@ async def uploadphoto(client, message):
     
             
 
-@Client.on_message(filters.animation)
+@app.on_message(filters.animation)
 async def uploadgif(client, message):
   if(message.animation.file_size < 5242880):
     msg = await message.reply_text("`Tʀʏɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅ join` @septemberfilms")
@@ -62,7 +69,7 @@ async def uploadgif(client, message):
   else:
     await message.reply_text("Size Should Be Less Than 5 mb join @septemberfilms")
 
-@Client.on_message(filters.video)
+@app.on_message(filters.video)
 async def uploadvid(client, message):
   if(message.video.file_size < 5242880):
     msg = await message.reply_text("`Tʀʏɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅ join` @septemberfilms")
@@ -79,12 +86,6 @@ async def uploadvid(client, message):
   else:
     await message.reply_text("Size Should Be Less Than 5 mb join @septemberfilms")
 
-app = Client(
-    "Team Epic",
-    api_id=API_ID,
-    api_hash=API_HASH,
-    bot_token=BOT_TOKEN
-)
 
 @app.on_message(filters.command("webss"))
 async def take_ss(_, message: Message):
