@@ -55,27 +55,8 @@ async def uploadphoto(client, message):
 ⚪⚪⚪
 ⚪⚪⚪
 """)
-⚫
+  await msg.edit_text(f"""
 ⚫⚫⚫
-⚫⚫⚫
-""")
-  await msg.edit_text(f"""
-🔴🔴🔴
-🔴🔴🔴
-🔴🔴🔴
-""")
-  await msg.edit_text(f"""
-🔵🔵🔵
-🔵🔵🔵
-🔵🔵🔵
-""")
-  await msg.edit_text(f"""
-⚪⚪⚪
-⚪⚪⚪
-⚪⚪⚪
-""")
-  await msg.edit_text(f"""
-⚫
 ⚫⚫⚫
 ⚫⚫⚫
 """)
@@ -95,27 +76,7 @@ async def uploadphoto(client, message):
 ⚪⚪⚪
 """)
   await msg.edit_text(f"""
-⚫
 ⚫⚫⚫
-⚫⚫⚫
-""")
-  await msg.edit_text(f"""
-🔴🔴🔴
-🔴🔴🔴
-🔴🔴🔴
-""")
-  await msg.edit_text(f"""
-🔵🔵🔵
-🔵🔵🔵
-🔵🔵🔵
-""")
-  await msg.edit_text(f"""
-⚪⚪⚪
-⚪⚪⚪
-⚪⚪⚪
-""")
-  await msg.edit_text(f"""
-⚫
 ⚫⚫⚫
 ⚫⚫⚫
 """)
@@ -135,27 +96,7 @@ async def uploadphoto(client, message):
 ⚪⚪⚪
 """)
   await msg.edit_text(f"""
-⚫
 ⚫⚫⚫
-⚫⚫⚫
-""")
-  await msg.edit_text(f"""
-🔴🔴🔴
-🔴🔴🔴
-🔴🔴🔴
-""")
-  await msg.edit_text(f"""
-🔵🔵🔵
-🔵🔵🔵
-🔵🔵🔵
-""")
-  await msg.edit_text(f"""
-⚪⚪⚪
-⚪⚪⚪
-⚪⚪⚪
-""")
-  await msg.edit_text(f"""
-⚫
 ⚫⚫⚫
 ⚫⚫⚫
 """)
@@ -175,7 +116,67 @@ async def uploadphoto(client, message):
 ⚪⚪⚪
 """)
   await msg.edit_text(f"""
-⚫
+⚫⚫⚫
+⚫⚫⚫
+⚫⚫⚫
+""")
+  await msg.edit_text(f"""
+🔴🔴🔴
+🔴🔴🔴
+🔴🔴🔴
+""")
+  await msg.edit_text(f"""
+🔵🔵🔵
+🔵🔵🔵
+🔵🔵🔵
+""")
+  await msg.edit_text(f"""
+⚪⚪⚪
+⚪⚪⚪
+⚪⚪⚪
+""")
+  await msg.edit_text(f"""
+⚫⚫⚫
+⚫⚫⚫
+⚫⚫⚫
+""")
+  await msg.edit_text(f"""
+🔴🔴🔴
+🔴🔴🔴
+🔴🔴🔴
+""")
+  await msg.edit_text(f"""
+🔵🔵🔵
+🔵🔵🔵
+🔵🔵🔵
+""")
+  await msg.edit_text(f"""
+⚪⚪⚪
+⚪⚪⚪
+⚪⚪⚪
+""")
+  await msg.edit_text(f"""
+⚫⚫⚫
+⚫⚫⚫
+⚫⚫⚫
+""")
+  await msg.edit_text(f"""
+🔴🔴🔴
+🔴🔴🔴
+🔴🔴🔴
+""")
+  await msg.edit_text(f"""
+🔵🔵🔵
+🔵🔵🔵
+🔵🔵🔵
+""")
+  await msg.edit_text(f"""
+⚪⚪⚪
+⚪⚪⚪
+⚪⚪⚪
+""")
+  await msg.edit_text(f"""
+⚫⚫⚫
 ⚫⚫⚫
 ⚫⚫⚫
 """)
