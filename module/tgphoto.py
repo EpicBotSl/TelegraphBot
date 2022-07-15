@@ -179,36 +179,22 @@ async def uploadphoto(client, message):
   await msg.edit_text("🆂🅴🅽🅳🅸")
   await msg.edit_text("🆂🅴🅽🅳🅸🅽")
   await msg.edit_text("🆂🅴🅽🅳🅸🅽🅶")
-  await msg.edit_text("yeehaa!")
+  await msg.edit_text("**yeehaa!**")
 
   try:
     tlink = upload_file(img_path)
   except:
-    await msg.edit_text("`Something went wrong join` @septemberfilms") 
+    await msg.edit_text("Something went wrong join **@EpicChats**") 
   else:
-    await msg.edit_text(f"""ʏᴏᴜʀ ᴏᴅᴇʀ ➥ 
-📥 `https://telegra.ph{tlink[0]}`
+    await msg.edit_text(f"""📥 ʏᴏᴜʀ ᴏᴅᴇʀ 📥
+ 
+➥  `https://telegra.ph{tlink[0]}`
 """) 
     os.remove(img_path) 
     
             
 
-@app.on_message(filters.animation)
-async def uploadgif(client, message):
-  if(message.animation.file_size < 5242880):
-    msg = await message.reply_text("`Tʀʏɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅ join` @septemberfilms")
-    userid = str(message.chat.id)
-    gif_path = (f"./DOWNLOADS/{userid}.mp4")
-    gif_path = await client.download_media(message=message, file_name=gif_path)
-    await msg.edit_text("`Tʀʏɪɴɢ Tᴏ Uᴘʟᴏᴀᴅ.....`")
-    try:
-      tlink = upload_file(gif_path)
-      await msg.edit_text(f"`https://telegra.ph{tlink[0]}`")   
-      os.remove(gif_path)   
-    except:
-      await msg.edit_text("Something really Happend Wrong... join @septemberfilms") 
-  else:
-    await message.reply_text("Size Should Be Less Than 5 mb join @septemberfilms")
+
 
 @app.on_message(filters.video)
 async def uploadvid(client, message):
