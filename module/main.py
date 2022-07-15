@@ -28,7 +28,6 @@ from asyncio import *
 import heroku3
 import requests
 from script import *
-from helper.heroku_helper import HerokuHelper
 from helper.fsub import forcesub
 from database.check_user import *
 #--------------------------------------------------Db-------------------------------------------------#
