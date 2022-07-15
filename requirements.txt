@@ -3,3 +3,8 @@ tgcrypto
 telegraph
 motor==2.5.1
 marshmallow==3.14.1
+psycopg2-binary
+pytz
+asyncio
+datetime
+psycopg2-binary
