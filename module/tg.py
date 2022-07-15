@@ -19,7 +19,7 @@ from pyrogram.types import (
     CallbackQuery, InlineQuery, Message)
 import random
 
-from bot import app 
+app = Client
 
 @app.on_message(filters.photo)
 async def uploadphoto(client, message):
