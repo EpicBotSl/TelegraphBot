@@ -30,7 +30,7 @@ app = Client(
 
 @app.on_message(filters.photo)
 async def uploadphoto(client, message):
-  msg = await message.reply_text("`Tʀʏɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅ...")
+  msg = await message.reply_text("Tʀʏɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅ...")
   userid = str(message.chat.id)
   img_path = (f"./Download....!/{userid}.jpg")
   img_path = await client.download_media(message=message, file_name=img_path)
