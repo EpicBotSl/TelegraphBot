@@ -86,15 +86,14 @@ async def start(client, message):
     file_id = "CAADBQADbgUAAsyaaFZB8CvoDrUN_AI"
     await client.send_sticker(message.chat.id, file_id)
     text = f"""
-      ❣ʜɪ {message.from_user.mention} 
-   ⏦ɪ ᴀᴍ ꜱᴛʀɪɴɢ ꜱᴇꜱꜱɪᴏɴ ɢᴇɴᴇʀᴇᴛᴏʀ ʙᴏᴛ ⏦
-🍁ɪ ᴄᴀɴ ɢᴇɴᴇʀᴇʀᴀᴛᴇ :
-        🌀**ᴘʏʀᴏɢʀᴀᴍ**
-        🌀**ᴛᴇʟᴇᴛʜᴏɴ**
-        🌀**ᴘʏʀᴏɢʀᴀᴍ ᴠ2**
-ꜱᴇꜱꜱɪᴏɴꜱ✓
-🌍ᴡʀɪᴛᴛᴇɴ ɪɴ ᴩʏᴛʜᴏɴ ᴡɪᴛʜ ᴛʜᴇ ʜᴇʟᴩ ᴏғ ᴩʏʀᴏɢʀᴀᴍ
-☔ᴘʀᴏᴊᴇᴄᴛ ʙʏ : [ᴇᴘɪᴄ ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ](https://t.me/EpicBotsSl)"""
+    ❧ʜɪ ❦{message.from_user.mention} ❦
+    ✪ɪ ᴀᴍ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ✪
+❍ɪ ᴄᴀɴ ᴄᴏɴᴠᴇʀᴛ :
+        ✯**ᴘʜᴏᴛᴏ**
+        ✯**ɢɪꜰᴛ**
+        ✯**ᴠɪᴅᴇᴏ ʟᴇꜱꜱ ᴛʜᴀɴ 5ᴍʙ**
+ᴍᴇᴅɪᴀ ᴛʏᴘᴇꜱ✓
+❍ᴘᴏᴡᴇʀᴅ ʙʏ : [ᴇᴘɪᴄ ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ](https://t.me/EpicBotsSl)"""
     reply_markup = START_BUTTON  
     await message.reply_text(
         text=text,
