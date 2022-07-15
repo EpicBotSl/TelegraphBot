@@ -114,7 +114,10 @@ async def uploadvid(client, message):
 
   try:
     tlink = upload_file(vid_path)
-    await msg.edit_text(f"`https://telegra.ph{tlink[0]}`")     
+    await msg.edit_text(f"""📥 ʏᴏᴜʀ ᴏᴅᴇʀ 📥
+ 
+➥  `https://telegra.ph{tlink[0]}`
+""")     
       os.remove(vid_path)   
   except:
     await msg.edit_text("Something really Happend Wrong... join @EpicChats") 
