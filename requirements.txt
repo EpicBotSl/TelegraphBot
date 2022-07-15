@@ -1,3 +1,7 @@
+python-dotenv
+psycopg2
+Telethon
+pyromod
 pyrogram
 tgcrypto
 telegraph
