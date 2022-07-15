@@ -47,8 +47,8 @@ def ul(_, message):
             url = "https://telegra.ph" + x
 
         i.edit(f'ʏᴏᴜʀ ᴏᴅᴇʀ ⇰ `{url}`', reply_markup=InlineKeyboardMarkup([[
-                 InlineKeyboardButton('⎙ ᴏᴘᴇɴ', url=url),
-                 InlineKeyboardButton('⎆ ꜱʜᴀʀᴇ', switch_inline_query=url),
+                 InlineKeyboardButton('⎙ ᴏᴘᴇɴ', switch_inline_query=url),
+                 InlineKeyboardButton('⎆ ꜱʜᴀʀᴇ', url=url),
                  ]]), disable_web_page_preview=True)
 
 
