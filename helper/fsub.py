@@ -7,7 +7,7 @@ async def forcesub(bot, update):
         try:
             await bot.get_chat_member(AUTH_CHANNEL, update.from_user.id)
         except UserNotParticipant:
-            file_id = "CAADAgADxAIAAladvQotLPt8J_pZMQI"
+            file_id = "CAACAgUAAxkBAAIXQ2LRT_tWNzNPJX0uqHTxYLyokz-fAAJuBAAC4Q9YVL3dNR1fmKgAAR4E"
             await bot.send_sticker(update.from_user.id, file_id)
             text = FORCESUB_TEXT
             reply_markup = FORCESUB_BUTTONS
