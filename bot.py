@@ -46,12 +46,11 @@ def ul(_, message):
         for x in fk:
             url = "https://telegra.ph" + x
 
-        i.edit(f'Your telegraph [link]({url})', reply_markup=Heya, disable_web_page_preview=True)
-
-Heya = InlineKeyboardMarkup([[
+        i.edit(f'Your telegraph [link]({url})', reply_markup=InlineKeyboardMarkup([[
                  InlineKeyboardButton('open', switch_inline_query_current_chat=ul),
                  InlineKeyboardButton('⏎', url="https://t.me/EpicBotsSl"),
-                 ]])
+                 ]]), disable_web_page_preview=True)
+
 
 
 print("hellow world")
