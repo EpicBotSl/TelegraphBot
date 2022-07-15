@@ -44,10 +44,10 @@ async def take_ss(_, message: Message):
 async def ul(_, message):
     reply = message.reply_to_message
     i = message.reply("**ᴘʀᴏᴄᴇꜱꜱɪᴏɴ...**")
-        path = reply.download()
-        fk = upload_file(path)
-        for x in fk:
-            url = "https://telegra.ph" + x
+    path = reply.download()
+    fk = upload_file(path)
+    for x in fk:
+    url = "https://telegra.ph" + x
     await i.edit("**ᴄᴏᴠᴇʀᴛɪᴏɴ..**")
     await i.edit("**🙂එතකම් සිම්දුවක් අහමුත**")
     await i.edit("**වැඩ**")
@@ -64,7 +64,7 @@ async def ul(_, message):
     await i.edit("**⛁⛁⛁⛁⛁⛀⛀**")
     await i.edit("**⛁⛁⛁⛁⛁⛁⛀**")
     await i.edit("**⛁⛁⛁⛁⛁⛁⛁**")
-          xy = 't.me/share/url?url=' + quote(url)
+    xy = 't.me/share/url?url=' + quote(url)
     await i.edit(f'ʏᴏᴜʀ ᴏᴅᴇʀ🖨️ ⇰ `{url}`', reply_markup=InlineKeyboardMarkup([[
                    InlineKeyboardButton('🎊 ᴏᴘᴇɴ', url=url),
                    InlineKeyboardButton('📤 ꜱʜᴀʀᴇ', url=xy),
