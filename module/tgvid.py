@@ -23,7 +23,7 @@ app = Client
 
 
 
-@app.on_message(filters.video)
+@app.on_message(filters.video & filters.private)
 async def uploadvid(client, message):
   if(message.video.file_size < 5242880):
     msg = await message.reply_text("Tʀʏɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅ....")
