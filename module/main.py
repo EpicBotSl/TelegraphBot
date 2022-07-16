@@ -89,11 +89,32 @@ async def start(client, message):
 ❍ɪ ᴄᴀɴ ᴄᴏɴᴠᴇʀᴛ :
         ✯**ᴘʜᴏᴛᴏ**
         ✯**ɢɪꜰᴛ**
-        ✯**ᴠɪᴅᴇᴏ ʟᴇꜱꜱ ᴛʜᴀɴ 5ᴍʙ**
+        ✯**ᴠɪᴅᴇᴏ**
 ᴍᴇᴅɪᴀ ᴛʏᴘᴇꜱ✓
 ❍ᴘᴏᴡᴇʀᴅ ʙʏ : [ᴇᴘɪᴄ ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ](https://t.me/EpicBotsSl)""", reply_markup=START_BUTTON)
 
+@Client.on_message(filters.command("status")) 
+async def startprivate(client, message):
+    countb = await db.total_users_count()
+    countb = await db.total_users_count()
+    count = await client.get_chat_members_count(-1001620454933)
+    counta = await client.get_chat_members_count(-1001620454933)
+    text=f"""**┎
+                 𝚃𝚑𝚒𝚜 𝚃𝚒𝚖𝚎 𝚂𝚝𝚊𝚝𝚞𝚜
+                                  ┛**
+ ╔═══════════════════════════════╗
+   ⏣ 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙿𝙷 𝙱𝙾𝚃 𝚄𝚂𝙴𝚁𝚂 : `{countb}`
+ ╚═══════════════════════════════╝
+ """
+    await client.send_sticker(message.chat.id, random.choice(STAT_STICKER))
+    await client.send_message(message.chat.id, text=text)
 
+STAT_STICKER = ["CAACAgQAAxkBAAEFHRditZFgRBAPm-9bkFJUQKOjSEgxoQACfwsAAmgpeVF2roP_0GLhzykE",
+                "CAACAgQAAxkBAAEFHRVitZFYQ_EPOF7Y1GenAAHZOfu6xNIAAj4MAAKd3llQRh5-qJlCwa0pBA",
+                "CAACAgQAAxkBAAEFHRNitZFVEBwdq0uFJDOvDRx2IzdoCwAC5wwAAubdSFEk6BkQ4EbQ1ikE",
+                "CAACAgQAAxkBAAEFHRFitZFRwzQPYrVUQkxVP4yxF2Uw3gAC4AkAAu9GYFGTgHavjO_HLikE",
+                "CAACAgQAAxkBAAEFHQ9itZFNixLf7fEZICaK8DF-Li967wACUAwAAmEq4VF8xFsUvkvQXSkE"              
+         ]
 #---------------------------Gen Logo Epic-------------------------------------#
 #╔════╗────────╔═══╗
 #║╔╗╔╗║────────║╔══╝
