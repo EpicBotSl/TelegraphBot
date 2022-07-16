@@ -44,7 +44,7 @@ async def tgm(bot, update):
              disable_web_page_preview=True
          )
          await update.answer(
-             text="🕊️ Welcome to About menu🕊️",
+             text="🕊️ Welcome to Help menu🕊️",
          )
     elif update.data == "M_B":
          await update.message.edit_text(
@@ -58,6 +58,15 @@ async def tgm(bot, update):
     elif update.data == "Help":
          await update.message.edit_text(
              text=SUP_TYPE,
+             reply_markup=M_BACK,
+             disable_web_page_preview=True
+         )
+         await update.answer(
+             text="🕊️ Welcome to Types menu🕊️",
+         )
+    elif update.data == "about":
+         await update.message.edit_text(
+             text=ABOUT_TXT,
              reply_markup=M_BACK,
              disable_web_page_preview=True
          )
