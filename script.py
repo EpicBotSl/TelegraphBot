@@ -5,7 +5,10 @@ from pyrogram.errors import *
 from pyrogram import Client, filters
 from pyrogram.errors import *
 from pyrogram.types import *
+from pyrogram.types import Message
 from urllib.parse import quote
+
+SHARE_BUTTON_TEXT = "🙂Hey my dear Friend ! See this amazing bot @EtelegraphBot"
 
 abc = 't.me/share/url?url=' + quote(SHARE_BUTTON_TEXT.format(username=username))
 
