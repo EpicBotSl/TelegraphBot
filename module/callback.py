@@ -39,7 +39,7 @@ async def tgm(bot, update):
         )
     elif update.data == "gen":
          await update.message.edit_text(
-             text=ABOUT_TXT,
+             text=HELP_TXT,
              reply_markup=M_BACK,
              disable_web_page_preview=True
          )
@@ -55,4 +55,14 @@ async def tgm(bot, update):
          await update.answer(
              text="🕊️ Welcome back 🕊️",
          )
+    elif update.data == "Help":
+         await update.message.edit_text(
+             text=SUP_TYPE,
+             reply_markup=M_BACK,
+             disable_web_page_preview=True
+         )
+         await update.answer(
+             text="🕊️ Welcome to About menu🕊️",
+         )
+
 
