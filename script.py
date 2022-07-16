@@ -5,6 +5,9 @@ from pyrogram.errors import *
 from pyrogram import Client, filters
 from pyrogram.errors import *
 from pyrogram.types import *
+from urllib.parse import quote
+
+abc = 't.me/share/url?url=' + quote(SHARE_BUTTON_TEXT.format(username=username))
 
 START_BUTTON = InlineKeyboardMarkup([[
                  InlineKeyboardButton('🕊️ ʜᴇʟᴘ 🕊️', callback_data="gen")
@@ -14,11 +17,13 @@ START_BUTTON = InlineKeyboardMarkup([[
                  InlineKeyboardButton(text="🎊ᴀʙᴏᴜᴛ🎊", callback_data="about")
                  ],
                  [
-                 InlineKeyboardButton(text="❦ ꜱʜᴀʀᴇ & ꜱᴜᴘᴘᴏʀᴛ ᴜꜱ ❦", url="t.me/share/url?url=🙂Hey my dear Friend ! Se this amazing bot @EtelegraphBot)
+                 InlineKeyboardButton(text="❦ ꜱʜᴀʀᴇ & ꜱᴜᴘᴘᴏʀᴛ ᴜꜱ ❦", url="abc")
                  ],
                  [
                  InlineKeyboardButton(text="</ᴇᴘɪᴄ ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ</>🇱🇰", url="https://t.me/EpicBotsSl")
                  ]])
+
+SHARE_BUTTON_TEXT = "🙂Hey my dear Friend ! See this amazing bot @EtelegraphBot"
 
 ABOUT_TXT = f"""
 ╭╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╮
