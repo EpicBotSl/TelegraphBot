@@ -93,6 +93,14 @@ async def start(client, message):
 ᴍᴇᴅɪᴀ ᴛʏᴘᴇꜱ✓
 ❍ᴘᴏᴡᴇʀᴅ ʙʏ : [ᴇᴘɪᴄ ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ](https://t.me/EpicBotsSl)""", reply_markup=START_BUTTON)
 
+@Client.on_message(filters.command("help"))
+async def help(bot, message):
+    if await forcesub(bot, message):
+       return
+    await message.delete()
+    await message.reply_photo("https://telegra.ph/file/d82b2fdb41ac59c0c587d.jpg", caption=, reply_markup=START_BUTTON)
+
+
 @Client.on_message(filters.command("status")) 
 async def startprivate(client, message):
     countb = await db.total_users_count()
