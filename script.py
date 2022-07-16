@@ -36,6 +36,16 @@ M_BACK = InlineKeyboardMarkup([[
    InlineKeyboardButton('⏎', callback_data="M_B")
   ]])
 
+BA_TXT = f"""
+    ❧ʜɪ ❦dear❦
+    ✪ɪ ᴀᴍ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ✪
+❍ɪ ᴄᴀɴ ᴄᴏɴᴠᴇʀᴛ :
+        ✯**ᴘʜᴏᴛᴏ**
+        ✯**ɢɪꜰᴛ**
+        ✯**ᴠɪᴅᴇᴏ**
+ᴍᴇᴅɪᴀ ᴛʏᴘᴇꜱ✓
+❍ᴘᴏᴡᴇʀᴅ ʙʏ : [ᴇᴘɪᴄ ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ](https://t.me/EpicBotsSl)
+"""
 
 HELP_TXT = f"""
 **┏
