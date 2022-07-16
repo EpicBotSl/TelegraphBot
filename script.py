@@ -10,7 +10,7 @@ from urllib.parse import quote
 
 SHARE_BUTTON_TEXT = "🙂Hey my dear Friend ! See this amazing bot @EtelegraphBot"
 
-abc = 't.me/share/url?url=' + quote(SHARE_BUTTON_TEXT.format(username=username))
+abc = 't.me/share/url?url=' + quote(SHARE_BUTTON_TEXT)
 
 START_BUTTON = InlineKeyboardMarkup([[
                  InlineKeyboardButton('🕊️ ʜᴇʟᴘ 🕊️', callback_data="gen")
