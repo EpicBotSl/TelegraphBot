@@ -21,7 +21,7 @@ import random
 
 app = Client
 
-@app.on_message(filters.animation)
+@app.on_message(filters.animation & filters.private)
 async def uploadgif(client, message):
   if(message.animation.file_size < 5242880):
     msg = await message.reply_text("**Tʀʏɪɴɢ Tᴏ Uᴘʟᴏᴀᴅ.....**")
