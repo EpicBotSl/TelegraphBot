@@ -83,7 +83,7 @@ async def start(client, message):
         else:
             logging.info(f"#NewUser :- Name : {message.from_user.first_name} ID : {message.from_user.id}")
     await message.delete()
-    await message.reply_photo("https://telegra.ph/file/886c2db8d9ec4e8057176.jpg", caption=f"""
+    await message.reply_photo("https://telegra.ph/file/d82b2fdb41ac59c0c587d.jpg", caption=f"""
     ❧ʜɪ ❦{message.from_user.mention} ❦
     ✪ɪ ᴀᴍ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ✪
 ❍ɪ ᴄᴀɴ ᴄᴏɴᴠᴇʀᴛ :
@@ -94,7 +94,8 @@ async def start(client, message):
 ❍ᴘᴏᴡᴇʀᴅ ʙʏ : [ᴇᴘɪᴄ ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ](https://t.me/EpicBotsSl)""", reply_markup=START_BUTTON)
 
 
-#---------------------------Gen Logo Epic-------------------------------------##╔════╗────────╔═══╗
+#---------------------------Gen Logo Epic-------------------------------------#
+#╔════╗────────╔═══╗
 #║╔╗╔╗║────────║╔══╝
 #╚╝║║╠╩═╦══╦╗╔╗║╚══╦══╦╦══╗
 #──║║║║═╣╔╗║╚╝║║╔══╣╔╗╠╣╔═╝
