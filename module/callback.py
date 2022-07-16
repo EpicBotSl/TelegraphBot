@@ -46,4 +46,13 @@ async def tgm(bot, update):
          await update.answer(
              text="🕊️ Welcome to About menu🕊️",
          )
+    elif update.data == "M_B":
+         await update.message.edit_text(
+             text=BA_TXT,
+             reply_markup=START_BUTTON,
+             disable_web_page_preview=True
+         )
+         await update.answer(
+             text="🕊️ Welcome back 🕊️",
+         )
 
