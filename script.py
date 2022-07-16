@@ -8,9 +8,6 @@ from pyrogram.types import *
 from pyrogram.types import Message
 from urllib.parse import quote
 
-SHARE_BUTTON_TEXT = "🙂Hey my dear Friend ! See this amazing bot @EtelegraphBot"
-
-abc = 't.me/share/url?url=' + quote(SHARE_BUTTON_TEXT)
 
 START_BUTTON = InlineKeyboardMarkup([[
                  InlineKeyboardButton('🕊️ ʜᴇʟᴘ 🕊️', callback_data="gen")
@@ -20,13 +17,11 @@ START_BUTTON = InlineKeyboardMarkup([[
                  InlineKeyboardButton(text="🎊ᴀʙᴏᴜᴛ🎊", callback_data="about")
                  ],
                  [
-                 InlineKeyboardButton(text="❦ ꜱʜᴀʀᴇ & ꜱᴜᴘᴘᴏʀᴛ ᴜꜱ ❦", url="abc")
+                 InlineKeyboardButton(text="❦ ꜱʜᴀʀᴇ & ꜱᴜᴘᴘᴏʀᴛ ᴜꜱ ❦", url="t.me/share/url?url=@ETelegraphBot")
                  ],
                  [
                  InlineKeyboardButton(text="</ᴇᴘɪᴄ ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ</>🇱🇰", url="https://t.me/EpicBotsSl")
                  ]])
-
-SHARE_BUTTON_TEXT = "🙂Hey my dear Friend ! See this amazing bot @EtelegraphBot"
 
 ABOUT_TXT = f"""
 ╭╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╮
