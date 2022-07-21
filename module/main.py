@@ -115,7 +115,7 @@ async def help(bot, message):
     await message.reply_photo("https://telegra.ph/file/d82b2fdb41ac59c0c587d.jpg", caption=HELP_TXT, reply_markup=M_BACK)
 
 
-@Client.on_message(filters.command("status")) 
+@Client.on_message(filters.command("stats")) 
 async def startprivate(client, message):
     countb = await db.total_users_count()
     countb = await db.total_users_count()
