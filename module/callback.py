@@ -44,7 +44,7 @@ async def tgm(bot, update):
              disable_web_page_preview=True
          )
          await update.answer(
-             text="🕊️ Welcome to Help menu🕊️",
+             text="🕊️ Welcome to Help menu 🕊️ Join @EpicBotsSl",
          )
     elif update.data == "M_B":
          await update.message.edit_text(
@@ -53,7 +53,7 @@ async def tgm(bot, update):
              disable_web_page_preview=True
          )
          await update.answer(
-             text="🕊️ Welcome back 🕊️",
+             text="🕊️ Welcome back 🕊️ Join @EpicBotsSl",
          )
     elif update.data == "Help":
          await update.message.edit_text(
@@ -62,7 +62,7 @@ async def tgm(bot, update):
              disable_web_page_preview=True
          )
          await update.answer(
-             text="🕊️ Welcome to Types menu🕊️",
+             text="🕊️ Welcome to Types menu 🕊️ Join @EpicBotsSl",
          )
     elif update.data == "about":
          await update.message.edit_text(
@@ -71,7 +71,7 @@ async def tgm(bot, update):
              disable_web_page_preview=True
          )
          await update.answer(
-             text="🕊️ Welcome to About menu🕊️",
+             text="🕊️ Welcome to About menu 🕊️ Join @EpicBotsSl",
          )
 
 
